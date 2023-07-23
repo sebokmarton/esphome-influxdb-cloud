@@ -29,9 +29,9 @@ Wiring:
 | 5 - SEL   | GND          |
 | 6 - NC    | -            |
 
-Cabling:
+Cable:
 
-![cable][assets/cable.jpg]
+<img src="assets/cable.jpg" width="480">
 
 ### Firmware
 
@@ -49,4 +49,4 @@ Set up a free [Grafana Cloud](https://grafana.com/auth/sign-up?refCode=gr8Ln4qVG
 
 You can find the description of the sensor readings in the application notes from the sensor [documentation](https://sensirion.com/products/catalog/SEN55/) page. See an example Grafana dashboard at [air-quality.grafana.json](air-quality.grafana.json), or another one at [anotter-sensor-hub](https://github.com/Jana-Marie/anotter-sensor-hub).
 
-![grafana][assets/grafana.png]
+<img src="assets/grafana.png" width="480">
