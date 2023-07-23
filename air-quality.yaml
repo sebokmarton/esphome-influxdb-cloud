@@ -1,0 +1,85 @@
+esphome:
+  name: air-quality
+
+esp32:
+  board: nodemcu-32s
+  framework:
+    type: arduino
+
+logger:
+  level: INFO
+
+ota:
+  safe_mode: false
+  password: !secret ota_password
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+mdns:
+  # Remove if you need mDNS, I am using a static DHCP lease
+  disabled: true
+
+web_server:
+  local: true
+
+status_led:
+  pin: GPIO2
+
+i2c:
+
+sensor:
+  - platform: sen5x
+    id: sen55
+    pm_1_0:
+      name: "PM <1µm Weight concentration"
+      id: sensor_pm_1_0
+      accuracy_decimals: 1
+    pm_2_5:
+      name: "PM <2.5µm Weight concentration"
+      id: sensor_pm_2_5
+      accuracy_decimals: 1
+    pm_4_0:
+      name: "PM <4µm Weight concentration"
+      id: sensor_pm_4_0
+      accuracy_decimals: 1
+    pm_10_0:
+      name: "PM <10µm Weight concentration"
+      id: sensor_pm_10_0
+      accuracy_decimals: 1
+    temperature:
+      name: "Temperature"
+      id: sensor_temperature
+      accuracy_decimals: 1
+    humidity:
+      name: "Humidity"
+      id: sensor_humidity
+      accuracy_decimals: 0
+    voc:
+      name: "VOC"
+      id: sensor_voc
+    nox:
+      name: "NOx"
+      id: sensor_nox
+    update_interval: 15s
+
+button:
+  - platform: template
+    name: "Fan cleaning"
+    on_press:
+      then:
+       - sen5x.start_fan_autoclean: sen55
+
+external_components:
+  - source: components
+  # If you would like to pull from git
+  # - source: github://sebokmarton/esphome-influxdb-cloud@main
+    components: [ influxdb ]
+
+influxdb:
+  url: !secret influxdb_url
+  token: !secret influxdb_token
+  org: !secret influxdb_org
+  bucket: !secret influxdb_bucket
+  measurement: sen55

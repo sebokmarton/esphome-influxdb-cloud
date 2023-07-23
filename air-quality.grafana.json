@@ -1,0 +1,1399 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 12,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 11,
+      "panels": [],
+      "title": "Current",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 35,
+          "min": 15,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 20
+              },
+              {
+                "color": "#EAB839",
+                "value": 26
+              },
+              {
+                "color": "red",
+                "value": 30
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 0,
+        "y": 1
+      },
+      "id": 6,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "temperature"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,temperature FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Temperature",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "green",
+                "value": 40
+              },
+              {
+                "color": "yellow",
+                "value": 60
+              },
+              {
+                "color": "red",
+                "value": 70
+              }
+            ]
+          },
+          "unit": "humidity"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 3,
+        "y": 1
+      },
+      "id": 7,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "humidity"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,humidity FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Humidity",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 50,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 10
+              },
+              {
+                "color": "orange",
+                "value": 20
+              },
+              {
+                "color": "red",
+                "value": 25
+              }
+            ]
+          },
+          "unit": "conμgm3"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 6,
+        "y": 1
+      },
+      "id": 8,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "pm_1m_weight_concentration"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,pm_1m_weight_concentration FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "PM1",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 50,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 10
+              },
+              {
+                "color": "orange",
+                "value": 20
+              },
+              {
+                "color": "red",
+                "value": 25
+              }
+            ]
+          },
+          "unit": "conμgm3"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 9,
+        "y": 1
+      },
+      "id": 12,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "pm_25m_weight_concentration"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,pm_25m_weight_concentration FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "PM2.5",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 50,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 10
+              },
+              {
+                "color": "orange",
+                "value": 20
+              },
+              {
+                "color": "red",
+                "value": 25
+              }
+            ]
+          },
+          "unit": "conμgm3"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 12,
+        "y": 1
+      },
+      "id": 13,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "pm_4m_weight_concentration"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,pm_4m_weight_concentration FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "PM4",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 100,
+          "min": 0,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "orange",
+                "value": 40
+              },
+              {
+                "color": "red",
+                "value": 50
+              }
+            ]
+          },
+          "unit": "conμgm3"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 15,
+        "y": 1
+      },
+      "id": 14,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "pm_10m_weight_concentration"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,pm_10m_weight_concentration FROM sen55 WHERE $__timeRange(time) ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": "$__timeRange(time)"
+            }
+          ]
+        }
+      ],
+      "title": "PM10",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 500,
+          "min": 1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 150
+              },
+              {
+                "color": "orange",
+                "value": 250
+              },
+              {
+                "color": "red",
+                "value": 400
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 18,
+        "y": 1
+      },
+      "id": 9,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "voc"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,voc FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "VOC",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "max": 500,
+          "min": 1,
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "orange",
+                "value": 150
+              },
+              {
+                "color": "red",
+                "value": 300
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 3,
+        "x": 21,
+        "y": 1
+      },
+      "id": 15,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "nox"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "1",
+          "orderBy": "time DESC",
+          "queryText": "SELECT time,nox FROM sen55 ORDER BY time DESC LIMIT 1",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "NOx",
+      "type": "gauge"
+    },
+    {
+      "collapsed": false,
+      "gridPos": {
+        "h": 1,
+        "w": 24,
+        "x": 0,
+        "y": 5
+      },
+      "id": 10,
+      "panels": [],
+      "title": "Historical",
+      "type": "row"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
+                "value": null
+              },
+              {
+                "color": "green",
+                "value": 20
+              },
+              {
+                "color": "#EAB839",
+                "value": 26
+              },
+              {
+                "color": "red",
+                "value": 30
+              }
+            ]
+          },
+          "unit": "celsius"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 6
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "temperature"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,temperature FROM sen55 WHERE $__timeRange(time) ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": "$__timeRange(time)"
+            }
+          ]
+        }
+      ],
+      "title": "Temperature",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "red",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "green",
+                "value": 40
+              },
+              {
+                "color": "#EAB839",
+                "value": 60
+              },
+              {
+                "color": "red",
+                "value": 70
+              }
+            ]
+          },
+          "unit": "humidity"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 6
+      },
+      "id": 4,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "humidity"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,humidity FROM sen55 WHERE $__timeRange(time) ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": "$__timeRange(time)"
+            }
+          ]
+        }
+      ],
+      "title": "Humidity",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 10
+              },
+              {
+                "color": "orange",
+                "value": 20
+              },
+              {
+                "color": "red",
+                "value": 25
+              }
+            ]
+          },
+          "unit": "conμgm3"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 13
+      },
+      "id": 3,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "multi",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "pm_1m_weight_concentration"
+            },
+            {
+              "value": "pm_25m_weight_concentration"
+            },
+            {
+              "value": "pm_4m_weight_concentration"
+            },
+            {
+              "value": "pm_10m_weight_concentration"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,pm_1m_weight_concentration,pm_25m_weight_concentration,pm_4m_weight_concentration,pm_10m_weight_concentration FROM sen55 WHERE $__timeRange(time) ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": "$__timeRange(time)"
+            }
+          ]
+        }
+      ],
+      "title": "Particulate Matter",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 150
+              },
+              {
+                "color": "orange",
+                "value": 250
+              },
+              {
+                "color": "red",
+                "value": 400
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 20
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "voc"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,voc FROM sen55 ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Volatile Organic Compounds",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "orange",
+                "value": 150
+              },
+              {
+                "color": "red",
+                "value": 300
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 20
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "nox"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,nox FROM sen55 ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Nitrogen Oxides",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-3h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Air Quality",
+  "uid": "c5c1ddd2-71bb-48b9-8b90-285efecc7507",
+  "version": 6,
+  "weekStart": ""
+}
