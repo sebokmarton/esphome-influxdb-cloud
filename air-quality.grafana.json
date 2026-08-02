@@ -17,9 +17,7 @@
   },
   "editable": true,
   "fiscalYearStartMonth": 0,
-  "graphTooltip": 0,
-  "id": 12,
-  "links": [],
+  "graphTooltip": 1,
   "liveNow": false,
   "panels": [
     {
@@ -30,8 +28,7 @@
         "x": 0,
         "y": 0
       },
-      "id": 11,
-      "panels": [],
+      "id": 17,
       "title": "Current",
       "type": "row"
     },
@@ -45,7 +42,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 35,
           "min": 15,
           "thresholds": {
@@ -53,7 +49,7 @@
             "steps": [
               {
                 "color": "blue",
-                "value": null
+                "value": 0
               },
               {
                 "color": "green",
@@ -70,8 +66,7 @@
             ]
           },
           "unit": "celsius"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -81,6 +76,16 @@
       },
       "id": 6,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -89,10 +94,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -135,7 +146,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 100,
           "min": 0,
           "thresholds": {
@@ -143,7 +153,7 @@
             "steps": [
               {
                 "color": "red",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -164,8 +174,7 @@
             ]
           },
           "unit": "humidity"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -175,6 +184,16 @@
       },
       "id": 7,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -183,10 +202,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -229,7 +254,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 50,
           "min": 0,
           "thresholds": {
@@ -237,7 +261,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -254,8 +278,7 @@
             ]
           },
           "unit": "conμgm3"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -265,6 +288,16 @@
       },
       "id": 8,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -273,10 +306,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -319,7 +358,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 50,
           "min": 0,
           "thresholds": {
@@ -327,7 +365,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -344,8 +382,7 @@
             ]
           },
           "unit": "conμgm3"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -355,6 +392,16 @@
       },
       "id": 12,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -363,10 +410,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -409,7 +462,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 50,
           "min": 0,
           "thresholds": {
@@ -417,7 +469,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -434,8 +486,7 @@
             ]
           },
           "unit": "conμgm3"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -445,6 +496,16 @@
       },
       "id": 13,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -453,10 +514,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -499,7 +566,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 100,
           "min": 0,
           "thresholds": {
@@ -507,7 +573,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -524,8 +590,7 @@
             ]
           },
           "unit": "conμgm3"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -535,6 +600,16 @@
       },
       "id": 14,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -543,10 +618,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -589,7 +670,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 500,
           "min": 1,
           "thresholds": {
@@ -597,7 +677,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -614,8 +694,7 @@
             ]
           },
           "unit": "none"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -625,6 +704,16 @@
       },
       "id": 9,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -633,10 +722,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -679,7 +774,6 @@
           "color": {
             "mode": "thresholds"
           },
-          "mappings": [],
           "max": 500,
           "min": 1,
           "thresholds": {
@@ -687,7 +781,7 @@
             "steps": [
               {
                 "color": "green",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -704,8 +798,7 @@
             ]
           },
           "unit": "none"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 4,
@@ -715,6 +808,16 @@
       },
       "id": 15,
       "options": {
+        "barShape": "flat",
+        "barWidthFactor": 0.5,
+        "effects": {
+          "barGlow": false,
+          "centerGlow": false,
+          "gradient": false
+        },
+        "endpointMarker": "point",
+        "minVizHeight": 75,
+        "minVizWidth": 75,
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -723,10 +826,16 @@
           "fields": "",
           "values": false
         },
+        "segmentCount": 1,
+        "segmentSpacing": 0.3,
+        "shape": "gauge",
         "showThresholdLabels": false,
-        "showThresholdMarkers": true
+        "showThresholdMarkers": true,
+        "sizing": "auto",
+        "sparkline": false,
+        "textMode": "auto"
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -767,8 +876,7 @@
         "x": 0,
         "y": 5
       },
-      "id": 10,
-      "panels": [],
+      "id": 18,
       "title": "Historical",
       "type": "row"
     },
@@ -784,11 +892,13 @@
             "mode": "shades"
           },
           "custom": {
+            "axisBorderShow": false,
             "axisCenteredZero": false,
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
+            "barWidthFactor": 0.6,
             "drawStyle": "line",
             "fillOpacity": 0,
             "gradientMode": "none",
@@ -797,6 +907,7 @@
               "tooltip": false,
               "viz": false
             },
+            "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
@@ -804,6 +915,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -813,13 +925,12 @@
               "mode": "area"
             }
           },
-          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
                 "color": "blue",
-                "value": null
+                "value": 0
               },
               {
                 "color": "green",
@@ -836,8 +947,7 @@
             ]
           },
           "unit": "celsius"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 7,
@@ -845,7 +955,7 @@
         "x": 0,
         "y": 6
       },
-      "id": 1,
+      "id": 16,
       "options": {
         "legend": {
           "calcs": [],
@@ -854,11 +964,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -903,11 +1014,13 @@
             "mode": "shades"
           },
           "custom": {
+            "axisBorderShow": false,
             "axisCenteredZero": false,
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
+            "barWidthFactor": 0.6,
             "drawStyle": "line",
             "fillOpacity": 0,
             "gradientMode": "none",
@@ -916,6 +1029,7 @@
               "tooltip": false,
               "viz": false
             },
+            "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
@@ -923,6 +1037,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -932,13 +1047,133 @@
               "mode": "area"
             }
           },
-          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
+              },
+              {
+                "color": "yellow",
+                "value": 20
+              },
+              {
+                "color": "orange",
+                "value": 150
+              },
+              {
+                "color": "red",
+                "value": 300
+              }
+            ]
+          }
+        }
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 6
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "13.2.0-30402795349",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "nox"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,nox FROM sen55 ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Nitrogen Oxides",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
                 "color": "red",
-                "value": null
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -959,14 +1194,13 @@
             ]
           },
           "unit": "humidity"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 7,
         "w": 12,
-        "x": 12,
-        "y": 6
+        "x": 0,
+        "y": 13
       },
       "id": 4,
       "options": {
@@ -977,11 +1211,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "single",
           "sort": "none"
         }
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -1026,11 +1261,13 @@
             "mode": "shades"
           },
           "custom": {
+            "axisBorderShow": false,
             "axisCenteredZero": false,
             "axisColorMode": "text",
             "axisLabel": "",
             "axisPlacement": "auto",
             "barAlignment": 0,
+            "barWidthFactor": 0.6,
             "drawStyle": "line",
             "fillOpacity": 0,
             "gradientMode": "none",
@@ -1039,6 +1276,7 @@
               "tooltip": false,
               "viz": false
             },
+            "insertNulls": false,
             "lineInterpolation": "linear",
             "lineWidth": 1,
             "pointSize": 5,
@@ -1046,6 +1284,7 @@
               "type": "linear"
             },
             "showPoints": "auto",
+            "showValues": false,
             "spanNulls": false,
             "stacking": {
               "group": "A",
@@ -1055,13 +1294,255 @@
               "mode": "area"
             }
           },
-          "mappings": [],
           "thresholds": {
             "mode": "absolute",
             "steps": [
               {
                 "color": "green",
+                "value": 0
+              },
+              {
+                "color": "yellow",
+                "value": 150
+              },
+              {
+                "color": "orange",
+                "value": 250
+              },
+              {
+                "color": "red",
+                "value": 400
+              }
+            ]
+          }
+        }
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "13.2.0-30402795349",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "voc"
+            }
+          ],
+          "datasource": {
+            "type": "influxdata-flightsql-datasource",
+            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "queryText": "SELECT time,voc FROM sen55 ORDER BY time",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": ""
+            }
+          ]
+        }
+      ],
+      "title": "Volatile Organic Compounds",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdb",
+        "uid": "cftzboqbh3fuoa"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "blue",
                 "value": null
+              },
+              {
+                "color": "green",
+                "value": 20
+              },
+              {
+                "color": "#EAB839",
+                "value": 26
+              },
+              {
+                "color": "red",
+                "value": 30
+              }
+            ]
+          },
+          "unit": "celsius"
+        }
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 20
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "hideZeros": false,
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "13.2.0-30402795349",
+      "targets": [
+        {
+          "columns": [
+            {
+              "value": "time"
+            },
+            {
+              "value": "temperature"
+            }
+          ],
+          "datasource": {
+            "type": "influxdb",
+            "uid": "cftzboqbh3fuoa"
+          },
+          "format": "table",
+          "groupBy": "",
+          "limit": "",
+          "orderBy": "time",
+          "query": "import \"math\"\r\nfrom(bucket: v.defaultBucket)\r\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\r\n  |> filter(fn: (r) => r._measurement == \"sen55\")\r\n  |> filter(fn: (r) => contains(value: r._field, set: [\"temperature\", \"humidity\"]))\r\n  |> pivot(rowKey: [\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")\r\n  |> map(fn: (r) => ({r with f: (r.temperature * 1.8) + 32.0}))\r\n  |> map(fn: (r) => ({r with hi:\r\n      -42.379\r\n      + 2.04901523 * r.f\r\n      + 10.14333127 * r.humidity\r\n      - 0.22475541 * r.f * r.humidity\r\n      - 0.00683783 * r.f * r.f\r\n      - 0.05481717 * r.humidity * r.humidity\r\n      + 0.00122874 * r.f * r.f * r.humidity\r\n      + 0.00085282 * r.f * r.humidity* r.humidity\r\n      - 0.00000199 * r.f * r.f * r.humidity* r.humidity}))\r\n  |> map(fn: (r) => ({r with adjusted:\r\n      r.hi\r\n      + (if r.humidity < 13 and r.f >= 80 and r.f <= 112 then -((13.0 - r.humidity) / 4.0) * math.sqrt(x: 17.0 - math.abs(x: r.f - 95.0) / 17.0) else 0.0)\r\n      + (if r.humidity > 85 and r.f >= 80 and r.f <= 87 then ((r.humidity - 85.0) / 10.0) * ((87.0 - r.f) / 5.0) else 0.0)}))\r\n  |> map(fn: (r) => ({r with simple:\r\n      0.5 * (r.f + 61.0 + ((r.f - 68.0) * 1.2) + (r.humidity * 0.094))}))\r\n  |> map(fn: (r) => ({r with heatindex:\r\n      if r.f <= 40 then r.f else\r\n      if (r.f + r.simple) / 2.0 < 80 then r.simple else r.adjusted}))\r\n  |> map(fn: (r) => ({r with heatindex_c: (r.heatindex - 32.0) / 1.8}))\r\n  |> keep(columns: [\"_time\", \"heatindex_c\"])\r\n",
+          "rawEditor": false,
+          "refId": "A",
+          "table": "sen55",
+          "wheres": [
+            {
+              "value": "$__timeRange(time)"
+            }
+          ]
+        }
+      ],
+      "title": "Heat index",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "influxdata-flightsql-datasource",
+        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "fixedColor": "text",
+            "mode": "shades"
+          },
+          "custom": {
+            "axisBorderShow": false,
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "barWidthFactor": 0.6,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "insertNulls": false,
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "showValues": false,
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "area"
+            }
+          },
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": 0
               },
               {
                 "color": "yellow",
@@ -1078,14 +1559,13 @@
             ]
           },
           "unit": "conμgm3"
-        },
-        "overrides": []
+        }
       },
       "gridPos": {
         "h": 7,
-        "w": 24,
-        "x": 0,
-        "y": 13
+        "w": 12,
+        "x": 12,
+        "y": 20
       },
       "id": 3,
       "options": {
@@ -1096,11 +1576,12 @@
           "showLegend": true
         },
         "tooltip": {
+          "hideZeros": false,
           "mode": "multi",
           "sort": "none"
         }
       },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
+      "pluginVersion": "13.2.0-30402795349",
       "targets": [
         {
           "columns": [
@@ -1141,259 +1622,32 @@
       ],
       "title": "Particulate Matter",
       "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "influxdata-flightsql-datasource",
-        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "text",
-            "mode": "shades"
-          },
-          "custom": {
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "area"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "yellow",
-                "value": 150
-              },
-              {
-                "color": "orange",
-                "value": 250
-              },
-              {
-                "color": "red",
-                "value": 400
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 12,
-        "x": 0,
-        "y": 20
-      },
-      "id": 2,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
-      "targets": [
-        {
-          "columns": [
-            {
-              "value": "time"
-            },
-            {
-              "value": "voc"
-            }
-          ],
-          "datasource": {
-            "type": "influxdata-flightsql-datasource",
-            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
-          },
-          "format": "table",
-          "groupBy": "",
-          "limit": "",
-          "orderBy": "time",
-          "queryText": "SELECT time,voc FROM sen55 ORDER BY time",
-          "rawEditor": false,
-          "refId": "A",
-          "table": "sen55",
-          "wheres": [
-            {
-              "value": ""
-            }
-          ]
-        }
-      ],
-      "title": "Volatile Organic Compounds",
-      "type": "timeseries"
-    },
-    {
-      "datasource": {
-        "type": "influxdata-flightsql-datasource",
-        "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
-      },
-      "fieldConfig": {
-        "defaults": {
-          "color": {
-            "fixedColor": "text",
-            "mode": "shades"
-          },
-          "custom": {
-            "axisCenteredZero": false,
-            "axisColorMode": "text",
-            "axisLabel": "",
-            "axisPlacement": "auto",
-            "barAlignment": 0,
-            "drawStyle": "line",
-            "fillOpacity": 0,
-            "gradientMode": "none",
-            "hideFrom": {
-              "legend": false,
-              "tooltip": false,
-              "viz": false
-            },
-            "lineInterpolation": "linear",
-            "lineWidth": 1,
-            "pointSize": 5,
-            "scaleDistribution": {
-              "type": "linear"
-            },
-            "showPoints": "auto",
-            "spanNulls": false,
-            "stacking": {
-              "group": "A",
-              "mode": "none"
-            },
-            "thresholdsStyle": {
-              "mode": "area"
-            }
-          },
-          "mappings": [],
-          "thresholds": {
-            "mode": "absolute",
-            "steps": [
-              {
-                "color": "green",
-                "value": null
-              },
-              {
-                "color": "yellow",
-                "value": 20
-              },
-              {
-                "color": "orange",
-                "value": 150
-              },
-              {
-                "color": "red",
-                "value": 300
-              }
-            ]
-          }
-        },
-        "overrides": []
-      },
-      "gridPos": {
-        "h": 7,
-        "w": 12,
-        "x": 12,
-        "y": 20
-      },
-      "id": 5,
-      "options": {
-        "legend": {
-          "calcs": [],
-          "displayMode": "list",
-          "placement": "bottom",
-          "showLegend": true
-        },
-        "tooltip": {
-          "mode": "single",
-          "sort": "none"
-        }
-      },
-      "pluginVersion": "10.0.3-cloud.2.14737d80",
-      "targets": [
-        {
-          "columns": [
-            {
-              "value": "time"
-            },
-            {
-              "value": "nox"
-            }
-          ],
-          "datasource": {
-            "type": "influxdata-flightsql-datasource",
-            "uid": "b144930b-2f07-439a-b7ef-fee302238e41"
-          },
-          "format": "table",
-          "groupBy": "",
-          "limit": "",
-          "orderBy": "time",
-          "queryText": "SELECT time,nox FROM sen55 ORDER BY time",
-          "rawEditor": false,
-          "refId": "A",
-          "table": "sen55",
-          "wheres": [
-            {
-              "value": ""
-            }
-          ]
-        }
-      ],
-      "title": "Nitrogen Oxides",
-      "type": "timeseries"
     }
   ],
+  "preload": false,
   "refresh": "",
-  "schemaVersion": 38,
-  "style": "dark",
-  "tags": [],
-  "templating": {
-    "list": []
-  },
+  "schemaVersion": 42,
   "time": {
     "from": "now-3h",
     "to": "now"
   },
-  "timepicker": {},
-  "timezone": "",
+  "timepicker": {
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ]
+  },
+  "timezone": "browser",
   "title": "Air Quality",
+  "version": 15,
   "uid": "c5c1ddd2-71bb-48b9-8b90-285efecc7507",
-  "version": 6,
-  "weekStart": ""
+  "id": 12
 }
